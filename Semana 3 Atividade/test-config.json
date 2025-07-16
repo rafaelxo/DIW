@@ -1,0 +1,23 @@
+{
+    "html": {
+      "requiredTags": ["header", "footer", "nav", "main", "section", "article"],
+      "forbiddenTags": ["blink", "marquee"]
+    },
+    "css": {
+      "requiredSelectors": [],
+      "forbiddenProperties": []
+    },
+    "js": {
+      "requiredFunctions": [],
+      "forbiddenFunctions": []
+    },
+    "git": {
+      "requiredBranches": ["main", "develop"],
+      "minCommits": 5,
+      "forbidNoFFMerge": false,
+      "minMerges": 1,
+      "minLinesChanged": 50,
+      "requiredGitIgnoreEntries": [],
+      "requiredFiles": []
+    }
+  }

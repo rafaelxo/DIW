@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Diretório de Receitas" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="xxx/" />
+    <meta property="og:image" content="xxx/logo.png" />
+    <link rel="stylesheet" href="style.css">
+    <title>Diretório de Receitas</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" alt="Logo do site"></a>
+            </div>
+            <ul class="navegacao">
+                <li><a href="#">Entradas</a></li>
+                <li><a href="#">Pratos Principais</a></li>
+                <li><a href="#">Sobremesas</a></li>
+                <li><a href="#">Favoritos</a></li>
+            </ul>
+        </nav>
+        <h1><strong>Diretório de Receitas</strong></h1>
+        <form id="pesquisa" aria-label="Pesquisar por ingrediente">
+            <input type="text" id="ingredient" name="search" placeholder="Pesquise por ingrediente"
+                aria-label="Digite um ingrediente">
+            <button type="submit" aria-label="Buscar receita">🔍</button>
+        </form>
+    </header>
+    <main>
+        <section class="receitas-recomendadas">
+            <hr>
+            <h2><strong>Receitas Recomendadas</strong></h2>
+            <hr>
+            <div id="receitas">
+                <article class="receita">
+                    <a href="#">
+                        <h3>Strogonoff de Frango</h3>
+                        <img src="public2/imagens/receita1.jpg" alt="Imagem do Strogonoff de Frango">
+                        <p>Delicioso strogonoff de frango cremoso, servido com arroz e batata palha crocante.</p>
+                    </a>
+                    <button class="favorito" onclick="toggleFavorito(this, 'strogonoff')">❤️</button>
+                </article>
+
+                <article class="receita">
+                    <a href="#">
+                        <h3>Lasanha</h3>
+                        <img src="public2/imagens/receita4.jpg" alt="Imagem da Lasanha">
+                        <p>Lasanha de carne ou frango com molho béchamel, irresistível e saborosa.</p>
+                    </a>
+                    <button class="favorito" onclick="toggleFavorito(this, 'lasanha')">❤️</button>
+                </article>
+
+                <article class="receita">
+                    <a href="#">
+                        <h3>Parmegiana de Carne</h3>
+                        <img src="public2/imagens/receita6.jpg" alt="Imagem da Parmegiana de Carne">
+                        <p>Fatias de carne empanadas e fritas, cobertas com molho de tomate e queijo derretido, uma
+                            combinação perfeita.</p>
+                    </a>
+                    <button class="favorito" onclick="toggleFavorito(this, 'parmegiana')">❤️</button>
+                </article>
+
+                <article class="receita">
+                    <a href="#">
+                        <h3>Feijoada</h3>
+                        <img src="public2/imagens/receita7.jpg" alt="Imagem da Feijoada">
+                        <p>Feijão preto com carne de porco e linguiça, servido com arroz, couve e farofa.</p>
+                    </a>
+                    <button class="favorito" onclick="toggleFavorito(this, 'feijoada')">❤️</button>
+                </article>
+
+                <article class="receita">
+                    <a href="#">
+                        <h3>Arroz de Forno</h3>
+                        <img src="public2/imagens/receita9.jpg" alt="Imagem do Arroz de Forno">
+                        <p>Arroz misturado com frango, legumes e queijo, gratinado no forno até dourar.</p>
+                    </a>
+                    <button class="favorito" onclick="toggleFavorito(this, 'arroz')">❤️</button>
+                </article>
+
+                <article class="receita">
+                    <a href="#">
+                        <h3>Pão Caseiro</h3>
+                        <img src="public2/imagens/receita10.jpg" alt="Imagem do Pão Caseiro">
+                        <p>Pão feito artesanalmente, com uma crosta crocante e miolo macio, perfeito para qualquer
+                            refeição.</p>
+                    </a>
+                    <button class="favorito" onclick="toggleFavorito(this, 'pao')">❤️</button>
+                </article>
+
+                <article class="receita">
+                    <a href="#">
+                        <h3>Brigadeiro</h3>
+                        <img src="public2/imagens/receita11.jpg" alt="Imagem do Brigadeiro">
+                        <p>Doce cremoso de chocolate, perfeito para ser enrolado em bolinhas e coberto com granulado.
+                        </p>
+                    </a>
+                    <button class="favorito" onclick="toggleFavorito(this, 'brigadeiro')">❤️</button>
+                </article>
+
+                <article class="receita">
+                    <a href="#">
+                        <h3>Bolo de Cenoura</h3>
+                        <img src="public2/imagens/receita14.jpg" alt="Imagem do Bolo de Cenoura">
+                        <p>Bolo fofinho de cenoura coberto com brigadeiro, uma combinação deliciosa.</p>
+                    </a>
+                    <button class="favorito" onclick="toggleFavorito(this, 'bolo_cenoura')">❤️</button>
+                </article>
+            </div>
+            <hr>
+        </section>
+    </main>
+    <footer>
+        <div id="redes-sociais">
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><img src="public2/imagens/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><img src="public2/imagens/instagram.png" alt="Instagram"></a>
+            <a href="https://www.twitter.com" target="_blank" aria-label="Twitter"><img src="public2/imagens/twitter.png" alt="Twitter"></a>
+        </div>    
+        <div id="copyright">
+            <p>&copy; 2025 Diretório de Receitas | Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
